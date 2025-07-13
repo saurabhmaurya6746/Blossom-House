@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Event {% endblock %}
+{% block body %}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center">
+        <h1 class="display-4 text-white animated slideInDown mb-4">Events</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Event</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Events Section Start -->
+<div class="container my-6">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">📸 Our School Events</h2>
+        <p>Take a look at some of the memorable moments from recent events.</p>
+    </div>
+    <div class="container my-6">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <div class="col">
+            <div class="card event-card">
+                <a href="{% static 'img/event.png' %}" target="_blank">
+                    <img src="{% static 'img/event.png' %}" class="card-img-top" alt="Event 1">
+                </a>
+            </div>
+            <div class="card-body">
+                    <h5 class="card-title">Annual Day</h5>
+                    <p class="card-text">Celebrating our students' achievements and talents.</p>
+                </div>
+        </div>
+        <div class="col">
+            <div class="card event-card">
+                <a href="{% static 'img/event.png' %}" target="_blank">
+                    <img src="{% static 'img/event.png' %}" class="card-img-top" alt="Event 1">
+                </a>
+            </div>
+            <div class="card-body">
+                    <h5 class="card-title">Annual Day</h5>
+                    <p class="card-text">Celebrating our students' achievements and talents.</p>
+                </div>
+        </div>
+        <div class="col">
+            <div class="card event-card">
+                <a href="{% static 'img/event.png' %}" target="_blank">
+                    <img src="{% static 'img/event.png' %}" class="card-img-top" alt="Event 1">
+                </a>
+            </div>
+            <div class="card-body">
+                    <h5 class="card-title">Annual Day</h5>
+                    <p class="card-text">Celebrating our students' achievements and talents.</p>
+                </div>
+        </div>
+        <div class="col">
+            <div class="card event-card">
+                <a href="{% static 'img/event.png' %}" target="_blank">
+                    <img src="{% static 'img/event.png' %}" class="card-img-top" alt="Event 1">
+                </a>
+            </div>
+            <div class="card-body">
+                    <h5 class="card-title">Annual Day</h5>
+                    <p class="card-text">Celebrating our students' achievements and talents.</p>
+                </div>
+        </div>
+        <div class="col">
+            <div class="card event-card">
+                <a href="{% static 'img/Event2.png' %}" target="_blank">
+                    <img src="{% static 'img/Event2.png' %}" class="card-img-top" alt="Event 1">
+                </a>
+            </div>
+            <div class="card-body">
+                    <h5 class="card-title">Annual Day</h5>
+                    <p class="card-text">Celebrating our students' achievements and talents.</p>
+                </div>
+          </div>
+        <div class="col">
+            <div class="card event-card">
+                <a href="{% static 'img/Event2.png' %}" target="_blank">
+                    <img src="{% static 'img/Event2.png' %}" class="card-img-top" alt="Event 1">
+                </a>
+            </div>
+            <div class="card-body">
+                    <h5 class="card-title">Annual Day</h5>
+                    <p class="card-text">Celebrating our students' achievements and talents.</p>
+                </div>
+          </div>
+        <div class="col">
+            <div class="card event-card">
+                <a href="{% static 'img/Event2.png' %}" target="_blank">
+                    <img src="{% static 'img/Event2.png' %}" class="card-img-top" alt="Event 1">
+                </a>
+            </div>
+            <div class="card-body">
+                    <h5 class="card-title">Annual Day</h5>
+                    <p class="card-text">Celebrating our students' achievements and talents.</p>
+                </div>
+          </div>
+        <div class="col">
+            <div class="card event-card">
+                <a href="{% static 'img/Event2.png' %}" target="_blank">
+                    <img src="{% static 'img/Event2.png' %}" class="card-img-top" alt="Event 1">
+                </a>
+            </div>
+            <div class="card-body">
+                    <h5 class="card-title">Annual Day</h5>
+                    <p class="card-text">Celebrating our students' achievements and talents.</p>
+                </div>
+          </div>
+ 
+    </div>
+</div>
+</div>
+<!-- Events Section End -->
+
+{% endblock %}

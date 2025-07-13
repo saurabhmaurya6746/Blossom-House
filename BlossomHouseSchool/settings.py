@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ckz5w@$o4=6bkjkl+9mlu!r!jj*w6sff^m3tnxawfn-%)tfg+('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['blossom-house.onrender.com', 'localhost', '127.0.0.1']
 
@@ -117,13 +117,12 @@ USE_I18N = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+STATIC_URL = '/static/'  # add trailing slash
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # this is for production
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "myapp/static"),
-]
- 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# This is used only in development (you can comment or delete in production)
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'myapp/static')]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

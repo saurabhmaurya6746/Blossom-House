@@ -119,6 +119,25 @@
         border-top: 1px solid #EEEEEE;
     }
 }
+@media (max-width: 466px) {
+    .navbar h2{
+        font-size: 17px;
+    }
+    .navbar-toggler span{
+        font-size: 15px;
+    }
+}
+@media (max-width: 366px) {
+    .navbar  h2  {
+        font-size: 15px;
+    }
+    .navbar-toggler span{
+        font-size: 10px;
+    }
+    .navbar-toggler{
+        padding:5px;
+    }
+}
 
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
@@ -139,25 +158,6 @@
     }
 }
 
-@media (max-width: 460px) {
-    .navbar  h2  {
-        font-size: 17px;
-    }
-    .navbar-toggler span{
-        font-size: 15px;
-    }
-}
-@media (max-width: 366px) {
-    .navbar  h2  {
-        font-size: 15px;
-    }
-    .navbar-toggler span{
-        font-size: 10px;
-    }
-    .navbar-toggler{
-        padding:5px;
-    }
-}
 
 /*** Header ***/
 .carousel-caption {

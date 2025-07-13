@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Contact {% endblock %}
+{% block body %}
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Contact</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+                    <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
+                    <li class="breadcrumb-item text-primary active" aria-current=" ">
+                        <a href="{% url 'contact' %}">Contact</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    
+    <!-- Courses Start -->
+  <div class="container-xxl courses pb-0">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-8 my-3 mb-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="bg-primary text-center p-5 rounded">
+                    <h1 class="mb-4 text-white">Admission Enquiry Form</h1>
+                    <p class="text-white mb-4"><small><span class="text-warning">*</span> are Required fields</small></p>
+                    <form method="post" action="{% url 'contact' %}">
+                        {% csrf_token %}
+                        <div class="row g-3">
+                            <!-- Parent/Guardian Name -->
+                            <div class="col-sm-6">
+                                
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0" id="parent_name" name="parent_name" placeholder="Parent/Guardian Name" required>
+                                    <label for="parent_name">Parent/Guardian Name *</label>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control border-0" id="email" name="email" placeholder="Your Email">
+                                    <label for="email">Your Email (optional)</label>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Number -->
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control border-0" id="mobile" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+                                    <label for="mobile">Mobile Number *</label>
+                                </div>
+                            </div>
+
+                            <!-- Student Name -->
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0" id="student_name" name="student_name" placeholder="Student Name" required>
+                                    <label for="student_name">Student Name *</label>
+                                </div>
+                            </div>
+
+                            <!-- Class Applying For -->
+                            <div class="col-sm-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0" id="class_applying" name="class_applying" placeholder="Class Applying For" required>
+                                    <label for="class_applying">Class Applying For *</label>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control border-0" placeholder="Leave a message here" name="message" id="message" style="height: 100px" required></textarea>
+                                    <label for="message">Message *</label>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="col-12">
+                                <button class="btn btn-dark w-100 py-3" type="submit">Submit Enquiry</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Courses End -->
+    <!-- Team End -->
+
+
+{% endblock %}

@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} About {% endblock %}
+{% block body %}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center">
+        <h1 class="display-4 text-white animated slideInDown mb-4">About Us</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">About</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- About Section Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="{% static 'img/Image 3.jpg' %}" alt="" style="object-fit: cover;">
+                    <img class="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="{% static 'img/Image 9.jpg' %}" alt="" style="width: 200px; height: 200px;">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="h-100">
+                    <h6 class="text-primary text-uppercase mb-2">About Us</h6>
+                    <h1 class="display-6 mb-4 fw-4" style="font-weight: 500;">Empowering Students for a Brighter Future</h1>
+                    <p>At Blossom House School, we believe that every child has limitless potential. Our goal is to provide quality education in a supportive and inspiring environment, helping students not only excel in academics but grow into well-rounded individuals.</p>
+                    <p class="mb-4">We combine modern teaching methods, experienced faculty, and a child-centered approach to ensure every student receives the care and knowledge they deserve. Join us in nurturing tomorrow’s leaders—today.</p>
+                    <div class="row g-2 mb-4 pb-2">
+                        <div class="col-sm-6"><i class="fa fa-check text-primary me-2"></i>Certified Faculty</div>
+                        <div class="col-sm-6"><i class="fa fa-check text-primary me-2"></i>Personalized Learning</div>
+                        <div class="col-sm-6"><i class="fa fa-check text-primary me-2"></i>Affordable Education</div>
+                        <div class="col-sm-6"><i class="fa fa-check text-primary me-2"></i>Safe & Nurturing Campus</div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <a class="btn btn-primary py-3 px-5" href="{% url 'contact' %}">Contact Us</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2" href="tel:+91-9415300859">
+                                <span class="flex-shrink-0 btn-square bg-primary">
+                                    <i class="fa fa-phone-alt text-white"></i>
+                                </span>
+                                <span class="px-3">09415300859</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Section End -->
+
+<!-- Mission & Vision Start -->
+<div class="container text-center py-5">
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+            <h3 class="text-primary fw-bold mb-2">🎯 Our Mission</h3>
+            <p>To nurture young minds with values, knowledge, and confidence for a successful future.</p>
+        </div>
+        <div class="col-md-5">
+            <h3 class="text-warning fw-bold mb-2">🌟 Our Vision</h3>
+            <p>To become a leading institution that inspires academic excellence and character building.</p>
+        </div>
+    </div>
+</div>
+<!-- Mission & Vision End -->
+
+<!-- Stats Section Start -->
+<div class="container py-4 text-center">
+    <div class="row g-4">
+        <div class="col-md-3">
+            <h2 class="text-primary fw-bold">15+</h2>
+            <p>Years of Excellence</p>
+        </div>
+        <div class="col-md-3">
+            <h2 class="text-primary fw-bold">500+</h2>
+            <p>Happy Students</p>
+        </div>
+        <div class="col-md-3">
+            <h2 class="text-primary fw-bold">30+</h2>
+            <p>Experienced Staff</p>
+        </div>
+        <div class="col-md-3">
+            <h2 class="text-primary fw-bold">100%</h2>
+            <p>Academic Success Rate</p>
+        </div>
+    </div>
+</div>
+<!-- Stats Section End -->
+
+<!-- Testimonials Start -->
+<div class="container py-5 bg-light">
+    <div class="text-center mb-4">
+        <h2 class="text-primary fw-bold">💬 What Parents Say</h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+            <div class="bg-white p-4 rounded shadow-sm h-100">
+                <p>"Blossom House is truly a second home for my child. The faculty is loving and supportive!"</p>
+                <h6 class="fw-bold mt-3">- Mrs. Neha Sharma</h6>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="bg-white p-4 rounded shadow-sm h-100">
+                <p>"Excellent education and amazing staff. Very happy with my child’s progress."</p>
+                <h6 class="fw-bold mt-3">- Mr. Rajeev Kumar</h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonials End -->
+
+<!-- Faculty Team Section -->
+<div class="container-xxl py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase mb-2">Meet Our Dedicated Educators & Mentors</h6>
+                <h1 class="display-6 mb-4">We Have Great Experience Of Teaching</h1>
+            </div>
+            <div class="row g-0 team-items">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/team-2.jpg' %}" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Mrs. Priya Sharma</h5>
+                            <span>Principal</span>
+                       <p class="mt-2">"Leading the school with passion and a vision for excellence."</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/team-1.jpg' %}" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Mr. Rakesh Sharma</h5>
+                            <span>Mathematics Teacher</span>
+                      <p class="mt-2">"Turning numbers into fun and confidence."</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Teacher1.png' %}" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Mr. Mohan Singh</h5>
+                            <span>Science Coordinator</span>
+                          <p class="mt-2">"Inspiring curiosity in every classroom."</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="{% static 'img/Teacher 2.png' %}" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Mrs. Alka Gupta</h5>
+                            <span>Primary Class Incharge</span>
+                            <p class="mt-2">"Caring for every child like her own."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Team Section End -->
+
+{% endblock %}

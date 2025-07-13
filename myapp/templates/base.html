@@ -31,7 +31,28 @@
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-   
+   <style>
+    @media (max-width: 466px) {
+    .navbar h2{
+        font-size: 17px;
+    }
+    .navbar-toggler span{
+        font-size: 15px;
+    }
+}
+@media (max-width: 366px) {
+    .navbar  h2  {
+        font-size: 15px;
+    }
+    .navbar-toggler span{
+        font-size: 10px;
+    }
+    .navbar-toggler{
+        padding:5px;
+    }
+}
+
+   </style>
 </head>
 
 <body>
